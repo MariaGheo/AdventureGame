@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
+using System.Media;
 
 namespace AdventureGame
 {
@@ -32,6 +33,7 @@ namespace AdventureGame
 
         private void option1Button_Click(object sender, EventArgs e)
         {
+            //choose next page
             if (page == 1)
             {
                 page = 3;
@@ -381,18 +383,20 @@ namespace AdventureGame
             {
                 page = 199;
             }
-            else
+            else //page 199, reset variables
             {
                 page = 2;
                 noTracker = 0;
                 waterBottle = false;
             }
 
+            //display page chosen
             DisplayPage();
         }
 
         private void option2Button_Click(object sender, EventArgs e)
         {
+            //choose next page
             if (page == 1)
             {
                 page = 4;
@@ -440,6 +444,10 @@ namespace AdventureGame
             else if (page == 21)
             {
                 page = 25;
+            }
+            else if (page == 23)
+            {
+                page = 32;
             }
             else if (page == 25)
             {
@@ -491,13 +499,17 @@ namespace AdventureGame
                 page = 200;
             }
 
+            //display page chosen
             DisplayPage();
         }
 
         private void option3Button_Click(object sender, EventArgs e)
         {
+            //the option3Button is visible on only one page, so I don't need an if statement with the page number
             //50% chance that it's a student or a creature
             int chance = randGen.Next(1, 3);
+
+            //chose page based on the chance, and whether or not the player took the water bottle
             if (chance == 1)
             {
                 if (waterBottle == true)
@@ -521,11 +533,13 @@ namespace AdventureGame
                 }
             }
 
+            //display page chosen
             DisplayPage();
         }
 
         public void DisplayPage()
         {
+            //displays the correct screen based on the page number
             switch (page)
             {
                 case 1:
@@ -591,6 +605,7 @@ namespace AdventureGame
                     option1Button.Text = "Next";
                     option2Button.Text = "";
                     option2Button.Enabled = false;
+                    this.BackgroundImage = null;
                     break;
                 case 12:
                     outputLabel.Text = "Well then let's get started! (Finally)";
@@ -696,6 +711,7 @@ namespace AdventureGame
                     option2Button.Text = "Go out the window";
                     option3Button.Text = "Confront it";
                     option3Button.Visible = true;
+                    this.BackgroundImage = Properties.Resources.school_hallway;
                     break;
                 case 30:
                     outputLabel.Text = "All the creatures grab at you, their claws digging into your skin.";
@@ -723,9 +739,13 @@ namespace AdventureGame
                     break;
                 case 35:
                     outputLabel.Text = "You walk home after another uneventful day at school. (Boring Ending 2)";
+                    this.BackgroundImage = null;
                     break;
                 case 36:
                     outputLabel.Text = "You start to stand up out of shock and the teacher immediately turns toward you. It opens its mouth and you see inside--it is completely devoid of any teeth or tongue, just flesh.";
+                    option1Button.Text = "Run out of the classroom";
+                    option2Button.Text = "Stay still";
+                    option2Button.Enabled = true;
                     break;
                 case 37:
                     outputLabel.Text = "You try to run back, but the creature catches up to you.";
@@ -806,9 +826,11 @@ namespace AdventureGame
                     break;
                 case 50:
                     outputLabel.Text = "...Needless to say, you don't survive.";
+                    this.BackgroundImage = null;
                     break;
                 case 51:
                     outputLabel.Text = "...Needless to say, you don't survive.";
+                    this.BackgroundImage = null;
                     break;
                 case 52:
                     outputLabel.Text = "They appear to be moving along with their schedule as normal. It seems as if they don't know about the creatures.";
@@ -827,6 +849,7 @@ namespace AdventureGame
                     break;
                 case 56:
                     outputLabel.Text = "You continue out of the building through the nearest exit. Outside the school is normal, with no signs of any nightmarish creatures.";
+                    this.BackgroundImage = Properties.Resources.sidewalk;
                     break;
                 case 57:
                     outputLabel.Text = "Suddenly, you hear something approaching from the hallway you came from.";
@@ -848,6 +871,7 @@ namespace AdventureGame
                     break;
                 case 60:
                     outputLabel.Text = "You walk home, and once you are inside you check your phone. You find that there have been reports of these creatures in schools from your city since 9am that morning, but at first people assumed it was just some random teenagers lying.";
+                    this.BackgroundImage = null;
                     break;
                 case 61:
                     outputLabel.Text = "You get up and try to run but immediately fall back down and hit your head off the doorframe.";
@@ -866,21 +890,24 @@ namespace AdventureGame
                     option1Button.Text = "Next";
                     option2Button.Text = "";
                     option2Button.Enabled = false;
+                    this.BackgroundImage = null;
                     break;
                 case 65:
                     outputLabel.Text = "You find out that the situation is predicted to be under control by the following morning, as firefighters are using hoses to defeat the beings.";
                     break;
                 case 66:
-                    outputLabel.Text = "You go out the hallway and are immediately confronted by a group of what at first seems to be students, but you soon discover that they are very much not not students.";
+                    outputLabel.Text = "You go out the hallway and are immediately confronted by a group of what at first seems to be students, but you soon discover that they are very much not students.";
                     option1Button.Text = "Next";
                     option2Button.Text = "";
                     option2Button.Enabled = false;
+                    this.BackgroundImage = Properties.Resources.school_hallway;
                     break;
                 case 67:
                     outputLabel.Text = "You open the window and hop out. You feel grateful that your class is on the ground floor of the building.";
                     option1Button.Text = "Next";
                     option2Button.Text = "";
                     option2Button.Enabled = false;
+                    this.BackgroundImage = null;
                     break;
                 case 68:
                     outputLabel.Text = "There are many unknowns surrounding these creatures, but you're too tired to think about it much. You go to your bed and take a well-deserved nap. (Good Loner Ending)";
@@ -890,30 +917,37 @@ namespace AdventureGame
                     option1Button.Text = "Next";
                     option2Button.Text = "";
                     option2Button.Enabled = false;
+                    this.BackgroundImage = null;
                     break;
                 case 70:
                     outputLabel.Text = "You grab the student's arm and tell them to run with you. You both make it out of the building.";
                     option1Button.Text = "Next";
                     option2Button.Text = "";
                     option2Button.Enabled = false;
+                    this.BackgroundImage = Properties.Resources.sidewalk;
                     break;
                 case 71:
                     outputLabel.Text = "...Needless to say, you don't survive.";
+                    this.BackgroundImage = null;
                     break;
                 case 72:
                     outputLabel.Text = "Outside the school is normal, with no signs of any nightmarish creatures.";
+                    this.BackgroundImage = Properties.Resources.sidewalk;
                     break;
                 case 73:
                     outputLabel.Text = "Outside the school is normal, with no signs of any nightmarish creatures.";
+                    this.BackgroundImage = Properties.Resources.sidewalk;
                     break;
                 case 74:
                     outputLabel.Text = "Outside the school is normal, with no signs of any nightmarish creatures.";
                     break;
                 case 75:
                     outputLabel.Text = "You decide to walk home, and once you are inside you check your phone. You find that there have been reports of these creatures in schools from your city since 9am that morning, but at first people assumed it was just some random teenagers lying.";
+                    this.BackgroundImage = null;
                     break;
                 case 76:
                     outputLabel.Text = "You walk home, and once you are inside you check your phone. You find that there have been reports of these creatures in schools from your city since 9am that morning, but at first people assumed it was just some random teenagers lying.";
+                    this.BackgroundImage = null;
                     break;
                 case 77:
                     outputLabel.Text = "You begin to explain what happened in your classroom, and then you see something move past the school windows. You point it out to the student, and as you both look closer you can roughly see the creatures.";
@@ -944,12 +978,14 @@ namespace AdventureGame
                     break;
                 case 86:
                     outputLabel.Text = "There are many unknowns surrounding these creatures, but you're too tired to think about it much. You call your parents to let them know you're safe. Once you're home, you go directly to bed and take a well-deserved nap. (Duo Ending)";
+                    this.BackgroundImage = null;
                     break;
                 case 199:
                     outputLabel.Text = "Play again?";
                     option1Button.Text = "Yes";
                     option2Button.Text = "No";
                     option2Button.Enabled = true;
+                    this.BackgroundImage = null;
                     break;
                 case 200:
                     outputLabel.Text = "Thank you for playing!";

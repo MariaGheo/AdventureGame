@@ -86,5 +86,11 @@
   <ItemGroup>
     <None Include="Resources\school_hallway.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sidewalk.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\running.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

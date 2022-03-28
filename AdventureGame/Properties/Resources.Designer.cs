@@ -71,11 +71,30 @@ namespace AdventureGame.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream running {
+            get {
+                return ResourceManager.GetStream("running", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap school_hallway {
             get {
                 object obj = ResourceManager.GetObject("school_hallway", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sidewalk {
+            get {
+                object obj = ResourceManager.GetObject("sidewalk", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

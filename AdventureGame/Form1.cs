@@ -563,6 +563,7 @@ namespace AdventureGame
                     option1Button.Text = "Continue with your work";
                     option2Button.Text = "Go back to sleep";
                     option2Button.Enabled = true;
+                    this.BackgroundImage = Properties.Resources.empty_classroom;
                     break;
                 case 7:
                     outputLabel.Text = "You look down to check your notes, but realize that they're not on your desk. Look for your binder?";

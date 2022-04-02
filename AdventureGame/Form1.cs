@@ -739,7 +739,7 @@ namespace AdventureGame
                     break;
                 case 35:
                     outputLabel.Text = "You walk home after another uneventful day at school. (Boring Ending 2)";
-                    this.BackgroundImage = null;
+                    this.BackgroundImage = Properties.Resources.outside_house;
                     break;
                 case 36:
                     outputLabel.Text = "You start to stand up out of shock and the teacher immediately turns toward you. It opens its mouth and you see inside--it is completely devoid of any teeth or tongue, just flesh.";
@@ -873,7 +873,7 @@ namespace AdventureGame
                     break;
                 case 60:
                     outputLabel.Text = "You walk home, and once you are inside you check your phone. You find that there have been reports of these creatures in schools from your city since 9am that morning, but at first people assumed it was just some random teenagers lying.";
-                    this.BackgroundImage = null;
+                    this.BackgroundImage = Properties.Resources.outside_house;
                     break;
                 case 61:
                     outputLabel.Text = "You get up and try to run but immediately fall back down and hit your head off the doorframe.";
@@ -896,6 +896,7 @@ namespace AdventureGame
                     break;
                 case 65:
                     outputLabel.Text = "You find out that the situation is predicted to be under control by the following morning, as firefighters are using hoses to defeat the beings.";
+                    this.BackgroundImage = null;
                     break;
                 case 66:
                     outputLabel.Text = "You go out the hallway and are immediately confronted by a group of what at first seems to be students, but you soon discover that they are very much not students.";
@@ -926,7 +927,7 @@ namespace AdventureGame
                     option1Button.Text = "Next";
                     option2Button.Text = "";
                     option2Button.Enabled = false;
-                    this.BackgroundImage = Properties.Resources.sidewalk;
+                    this.BackgroundImage = Properties.Resources.entering_sidewalk;
                     break;
                 case 71:
                     outputLabel.Text = "...Needless to say, you don't survive.";
@@ -942,14 +943,15 @@ namespace AdventureGame
                     break;
                 case 74:
                     outputLabel.Text = "Outside the school is normal, with no signs of any nightmarish creatures.";
+                    this.BackgroundImage = Properties.Resources.sidewalk;
                     break;
                 case 75:
                     outputLabel.Text = "You decide to walk home, and once you are inside you check your phone. You find that there have been reports of these creatures in schools from your city since 9am that morning, but at first people assumed it was just some random teenagers lying.";
-                    this.BackgroundImage = null;
+                    this.BackgroundImage = Properties.Resources.outside_house;
                     break;
                 case 76:
                     outputLabel.Text = "You walk home, and once you are inside you check your phone. You find that there have been reports of these creatures in schools from your city since 9am that morning, but at first people assumed it was just some random teenagers lying.";
-                    this.BackgroundImage = null;
+                    this.BackgroundImage = Properties.Resources.outside_house;
                     break;
                 case 77:
                     outputLabel.Text = "You begin to explain what happened in your classroom, and then you see something move past the school windows. You point it out to the student, and as you both look closer you can roughly see the creatures.";
@@ -959,6 +961,7 @@ namespace AdventureGame
                     break;
                 case 79:
                     outputLabel.Text = "You find out that the situation is predicted to be under control by the following morning, as firefighters are using hoses to defeat the beings.";
+                    this.BackgroundImage = null;
                     break;
                 case 80:
                     outputLabel.Text = "The student is understandably still skeptical, because the idea of weird creatures being in the school is very odd, and you couldn't see the creatures that well from the window. You go on your phone to try to see if there are any similar instances happening elsewhere, and it turns out there are.";

@@ -788,6 +788,8 @@ namespace AdventureGame
                     option2Button.Text = "";
                     option2Button.Enabled = false;
                     option3Button.Visible = false;
+                    SoundPlayer runningPlayer = new SoundPlayer(Properties.Resources.running);
+                    runningPlayer.Play();
                     break;
                 case 43:
                     outputLabel.Text = "Just as you go by your classroom, the creatures within it ambush you.";

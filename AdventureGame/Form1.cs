@@ -30,7 +30,9 @@ namespace AdventureGame
             InitializeComponent();
 
             option3Button.Text = "";
-            option3Button.Enabled = false;
+            option3Button.Visible = false;
+
+            Size = new Size(853, 648);
 
             DisplayPage();
         }
@@ -393,7 +395,7 @@ namespace AdventureGame
                 noTracker = 0;
                 waterBottle = false;
                 option3Button.Text = "";
-                option3Button.Enabled = false;
+                option3Button.Visible = false;
             }
 
             //display page chosen
@@ -552,20 +554,20 @@ namespace AdventureGame
                     WritePage("Hello new player!! Are you ready to play the game?");
                     option1Button.Text = "Yes";
                     option2Button.Text = "No";
-                    option1Button.Enabled = true;
-                    option2Button.Enabled = true;
+                    option1Button.Visible = true;
+                    option2Button.Visible = true;
                     break;
                 case 2:
                     WritePage("Welcome back! Are you ready to play again?");
                     option1Button.Text = "Yes";
                     option2Button.Text = "No";
-                    option1Button.Enabled = true;
-                    option2Button.Enabled = true;
+                    option1Button.Visible = true;
+                    option2Button.Visible = true;
                     break;
                 case 3:
                     WritePage("Well then let's get started!");
                     option1Button.Text = "Next";
-                    option1Button.Enabled = true;
+                    option1Button.Visible = true;
                     break;
                 case 4:
                     WritePage("Oh, alright!");
@@ -574,8 +576,8 @@ namespace AdventureGame
                     WritePage("Are you ready now?");
                     option1Button.Text = "Yes";
                     option2Button.Text = "No";
-                    option1Button.Enabled = true;
-                    option2Button.Enabled = true;
+                    option1Button.Visible = true;
+                    option2Button.Visible = true;
                     break;
                 case 5:
                     BackgroundImage = Properties.Resources.empty_classroom;
@@ -583,46 +585,46 @@ namespace AdventureGame
                     WritePage("You wake up and you look around. You're in a classroom. You must have fallen asleep during class.");
                     option1Button.Text = "Continue with your work";
                     option2Button.Text = "Go back to sleep";
-                    option1Button.Enabled = true;
-                    option2Button.Enabled = true;
+                    option1Button.Visible = true;
+                    option2Button.Visible = true;
                     break;
                 case 7:
                     WritePage("You look down to check your notes, but realize that they're not on your desk. Look for your binder?");
                     option1Button.Text = "Yes";
                     option2Button.Text = "No";
-                    option1Button.Enabled = true;
-                    option2Button.Enabled = true;
+                    option1Button.Visible = true;
+                    option2Button.Visible = true;
                     break;
                 case 8:
                     WritePage("You go back to sleep, and wake up again to see that the classroom is now empty.");
                     option1Button.Text = "Next";
-                    option1Button.Enabled = true;
+                    option1Button.Visible = true;
                     break;
                 case 9:
                     WritePage("You search the compartment under your desk for your binder, but there is only a partially-drank plastic water bottle in it.");
                     option1Button.Text = "Take the water bottle";
                     option2Button.Text = "Leave it";
-                    option1Button.Enabled = true;
-                    option2Button.Enabled = true;
+                    option1Button.Visible = true;
+                    option2Button.Visible = true;
                     break;
                 case 10:
                     WritePage("You let your mind wander as your eyes skim the room. What do you look at?");
                     option1Button.Text = "The teacher";
                     option2Button.Text = "The students";
-                    option1Button.Enabled = true;
-                    option2Button.Enabled = true;
+                    option1Button.Visible = true;
+                    option2Button.Visible = true;
                     break;
                 case 11:
                     BackgroundImage = null;
                     Refresh();
                     WritePage("You walk home after another uneventful day at school. (Boring Ending 1)");
                     option1Button.Text = "Next";
-                    option1Button.Enabled = true;
+                    option1Button.Visible = true;
                     break;
                 case 12:
                     WritePage("Well then let's get started! (Finally)");
                     option1Button.Text = "Next";
-                    option1Button.Enabled = true;
+                    option1Button.Visible = true;
                     break;
                 case 13:
                     WritePage("You clearly aren't ready right now. Open this game when you are ACTUALLY READY TO PLAY.");
@@ -633,89 +635,89 @@ namespace AdventureGame
                 case 14:
                     WritePage("You leave the water bottle in the desk.");
                     option1Button.Text = "Next";
-                    option1Button.Enabled = true;
+                    option1Button.Visible = true;
                     break;
                 case 15:
                     WritePage("You take the water bottle.");
                     option1Button.Text = "Next";
-                    option1Button.Enabled = true;
+                    option1Button.Visible = true;
                     break;
                 case 16:
                     WritePage("Your mind begins to wander as your eyes skim the room. What do you look at?");
                     option1Button.Text = "The teacher";
                     option2Button.Text = "The students";
-                    option1Button.Enabled = true;
-                    option2Button.Enabled = true;
+                    option1Button.Visible = true;
+                    option2Button.Visible = true;
                     break;
                 case 17:
                     WritePage("You look at the teacher. He's wearing a blue shirt with--wait. Isn't your teacher a woman?");
                     option1Button.Text = "Look at the teacher more closely";
                     option2Button.Text = "Look away";
-                    option1Button.Enabled = true;
-                    option2Button.Enabled = true;
+                    option1Button.Visible = true;
+                    option2Button.Visible = true;
                     break;
                 case 18:
                     WritePage("You look around at the students. They have no faces.");
                     option1Button.Text = "Next";
-                    option1Button.Enabled = true;
+                    option1Button.Visible = true;
                     break;
                 case 19:
                     WritePage("You observe the teacher. It now occurs to you that you don't recognize him from anywhere. Probably your teacher is sick today.");
                     option1Button.Text = "Next";
-                    option1Button.Enabled = true;
+                    option1Button.Visible = true;
                     break;
                 case 20:
                     WritePage("You're too tired for this. You look away from the teacher.");
                     option1Button.Text = "Next";
-                    option1Button.Enabled = true;
+                    option1Button.Visible = true;
                     break;
                 case 21:
                     WritePage("The one to your right begins to reach toward you.");
                     option1Button.Text = "Push its hand away";
                     option2Button.Text = "Get out of your chair";
-                    option1Button.Enabled = true;
-                    option2Button.Enabled = true;
+                    option1Button.Visible = true;
+                    option2Button.Visible = true;
                     break;
                 case 22:
                     WritePage("You try to figure out what you were working on before you fell asleep, but you start drifting off again.");
                     option1Button.Text = "Next";
-                    option1Button.Enabled = true;
+                    option1Button.Visible = true;
                     break;
                 case 23:
                     WritePage("You have nearly fallen asleep again when you hear someone calling your name. You're too tired to be certain, but you assume it is the teacher.");
                     option1Button.Text = "Look at the teacher";
                     option2Button.Text = "Go back to sleep";
-                    option1Button.Enabled = true;
-                    option2Button.Enabled = true;
+                    option1Button.Visible = true;
+                    option2Button.Visible = true;
                     break;
                 case 24:
                     WritePage("After you push its hand away with your arm, a weird smell comes from your sleeve as it appears to melt away, and you feel a burning sensation in your arm.");
                     option1Button.Text = "Next";
-                    option1Button.Enabled = true;
+                    option1Button.Visible = true;
                     break;
                 case 25:
                     WritePage("You stand up to get away from it. You look around and see the other students are beginning to rise as well, all of them seemingly watching you despite their lack of eyes.");
                     option1Button.Text = "Leave the classroom";
                     option2Button.Text = "Stay to see what they do";
-                    option1Button.Enabled = true;
-                    option2Button.Enabled = true;
+                    option1Button.Visible = true;
+                    option2Button.Visible = true;
                     break;
                 case 26:
                     WritePage("As your eyes begin to close, you hear someone calling your name. You're too tired to be certain, but you assume it is the teacher.");
                     option1Button.Text = "Look at the teacher";
                     option2Button.Text = "Go back to sleep";
-                    option1Button.Enabled = true;
-                    option2Button.Enabled = true;
+                    option1Button.Visible = true;
+                    option2Button.Visible = true;
                     break;
                 case 27:
                     WritePage("One of the creatures behind you grabs your other arm, and you feel claws sink into your skin.");
                     option1Button.Text = "Next";
-                    option1Button.Enabled = true;
+                    option1Button.Visible = true;
                     break;
                 case 28:
                     WritePage("...Needless to say, you don't survive.");
                     option1Button.Text = "Next";
-                    option1Button.Enabled = true;
+                    option1Button.Visible = true;
                     break;
                 case 29:
                     BackgroundImage = Properties.Resources.school_hallway;
@@ -724,350 +726,358 @@ namespace AdventureGame
                     option1Button.Text = "Run back";
                     option2Button.Text = "Go out the window";
                     option3Button.Text = "Confront it";
-                    option1Button.Enabled = true;
-                    option2Button.Enabled = true;
-                    option3Button.Enabled = true;
+                    option1Button.Visible = true;
+                    option2Button.Visible = true;
                     option3Button.Visible = true;
+                    Size = new Size(853, 788);
                     break;
                 case 30:
                     WritePage("All the creatures grab at you, their claws digging into your skin.");
                     option1Button.Text = "Next";
-                    option1Button.Enabled = true;
+                    option1Button.Visible = true;
                     break;
                 case 31:
                     WritePage("The teacher looks different. He is suddenly much taller, and seems to somehow cast a shadow across the room, despite there being several lights along the ceiling.");
                     option1Button.Text = "Next";
-                    option1Button.Enabled = true;
+                    option1Button.Visible = true;
                     break;
                 case 32:
                     WritePage("You go back to sleep, and wake up again to see that the classroom is now empty.");
                     option1Button.Text = "Next";
-                    option1Button.Enabled = true;
+                    option1Button.Visible = true;
                     break;
                 case 33:
                     WritePage("...Needless to say, you don't survive.");
                     option1Button.Text = "Next";
-                    option1Button.Enabled = true;
+                    option1Button.Visible = true;
                     break;
                 case 34:
                     WritePage("As you look closer, you realize that there is a large mouth where his face should be.");
                     option1Button.Text = "Next";
-                    option1Button.Enabled = true;
+                    option1Button.Visible = true;
                     break;
                 case 35:
                     BackgroundImage = Properties.Resources.outside_house;
                     Refresh();
                     WritePage("You walk home after another uneventful day at school. (Boring Ending 2)");
                     option1Button.Text = "Next";
-                    option1Button.Enabled = true;
+                    option1Button.Visible = true;
                     break;
                 case 36:
                     WritePage("You start to stand up out of shock and the teacher immediately turns toward you. It opens its mouth and you see inside--it is completely devoid of any teeth or tongue, just flesh.");
                     option1Button.Text = "Run out of the classroom";
                     option2Button.Text = "Stay still";
-                    option1Button.Enabled = true;
-                    option2Button.Enabled = true;
+                    option1Button.Visible = true;
+                    option2Button.Visible = true;
                     break;
                 case 37:
                     WritePage("You try to run back, but the creature catches up to you.");
                     option1Button.Text = "Next";
-                    option1Button.Enabled = true;
+                    option1Button.Visible = true;
                     option3Button.Visible = false;
+                    Size = new Size(853, 648);
                     break;
                 case 38:
                     WritePage("You try to get out the window, and then realize that the window doesn't open and you don't have anything to break it. You hear something running behind you, and then...Nothing.");
                     option1Button.Text = "Next";
-                    option1Button.Enabled = true;
+                    option1Button.Visible = true;
                     option3Button.Visible = false;
+                    Size = new Size(853, 648);
                     break;
                 case 39:
                     WritePage("You run back where you came from to try to go down to the other end of the hallway where there is another exit, past the room that you left a minute prior.");
                     option1Button.Text = "Next";
-                    option1Button.Enabled = true;
+                    option1Button.Visible = true;
                     option3Button.Visible = false;
+                    Size = new Size(853, 648);
                     break;
                 case 40:
                     WritePage("You try to get out the window, and then realize that the window doesn't open and you don't have anything to break it. You hear something walking behind you. You turn around to see who or what it is, and realize that it's a student. A normal student!");
                     option1Button.Text = "Next";
-                    option1Button.Enabled = true;
+                    option1Button.Visible = true;
                     option3Button.Visible = false;
+                    Size = new Size(853, 648);
                     break;
                 case 41:
                     WritePage("You move slowly toward it, and splash water from the bottle on it. Might as well try it, right?");
                     option1Button.Text = "Next";
-                    option1Button.Enabled = true;
+                    option1Button.Visible = true;
                     option3Button.Visible = false;
+                    Size = new Size(853, 648);
                     break;
                 case 42:
                     WritePage("You run toward it, and then realize you have no plan. It turns around and you see that it's a creature...");
                     option1Button.Text = "Next";
-                    option1Button.Enabled = true;
+                    option1Button.Visible = true;
                     option3Button.Visible = false;
+                    Size = new Size(853, 648);
                     SoundPlayer runningPlayer = new SoundPlayer(Properties.Resources.running);
                     runningPlayer.Play();
                     break;
                 case 43:
                     WritePage("Just as you go by your classroom, the creatures within it ambush you.");
                     option1Button.Text = "Next";
-                    option1Button.Enabled = true;
+                    option1Button.Visible = true;
                     break;
                 case 44:
                     WritePage("You don't recognize them, but you don't care, you're just relieved to see another person.");
                     option1Button.Text = "Next";
-                    option1Button.Enabled = true;
+                    option1Button.Visible = true;
                     break;
                 case 45:
                     WritePage("You move slowly toward it, and splash water from the bottle on it. Might as well try it, right?");
                     option1Button.Text = "Next";
-                    option1Button.Enabled = true;
+                    option1Button.Visible = true;
                     option3Button.Visible = false;
+                    Size = new Size(853, 648);
                     break;
                 case 46:
                     WritePage("You run toward it, and then realize you have no plan. It turns around and you see that it's a student, who looks very confused and slightly annoyed that you were running at them.");
                     option1Button.Text = "Next";
-                    option1Button.Enabled = true;
+                    option1Button.Visible = true;
                     option3Button.Visible = false;
+                    Size = new Size(853, 648);
                     break;
                 case 47:
                     WritePage("You're almost out of the classroom when you hear a deafening screech come from behind you. The sound rattles in your skull as a blast of air pushes you onto the ground.");
                     option1Button.Text = "Get up and keep running";
                     option2Button.Text = "Stay still on the ground";
-                    option1Button.Enabled = true;
-                    option2Button.Enabled = true;
+                    option1Button.Visible = true;
+                    option2Button.Visible = true;
                     break;
                 case 48:
                     WritePage("The teacher-creature remains still for a few moments, before slowly leaving the classroom.");
                     option1Button.Text = "Next";
-                    option1Button.Enabled = true;
+                    option1Button.Visible = true;
                     break;
                 case 49:
                     WritePage("It works! The creature immediately recoils and limps away.");
                     option1Button.Text = "Next";
-                    option1Button.Enabled = true;
+                    option1Button.Visible = true;
                     break;
                 case 50:
                     BackgroundImage = null;
                     Refresh();
                     WritePage("...Needless to say, you don't survive.");
                     option1Button.Text = "Next";
-                    option1Button.Enabled = true;
+                    option1Button.Visible = true;
                     break;
                 case 51:
                     BackgroundImage = null;
                     Refresh();
                     WritePage("...Needless to say, you don't survive.");
                     option1Button.Text = "Next";
-                    option1Button.Enabled = true;
+                    option1Button.Visible = true;
                     break;
                 case 52:
                     WritePage("They appear to be moving along with their schedule as normal. It seems as if they don't know about the creatures.");
                     option1Button.Text = "Next";
-                    option1Button.Enabled = true;
+                    option1Button.Visible = true;
                     break;
                 case 53:
                     WritePage("It turns around and...it's a student, who is quite angry at you for splashing water at them for seemingly no reason.");
                     option1Button.Text = "Next";
-                    option1Button.Enabled = true;
+                    option1Button.Visible = true;
                     break;
                 case 54:
                     WritePage("You are about to explain why yourself to the student when you hear something approaching form the hallway you came from.");
                     option1Button.Text = "Continue running past the student";
                     option2Button.Text = "Tell the student to run with you";
-                    option1Button.Enabled = true;
-                    option2Button.Enabled = true;
+                    option1Button.Visible = true;
+                    option2Button.Visible = true;
                     break;
                 case 55:
                     WritePage("Once the teacher's footsteps can no longer be heard, you carefully get up and look around. The classroom is empty.");
                     option1Button.Text = "Next";
-                    option1Button.Enabled = true;
+                    option1Button.Visible = true;
                     break;
                 case 56:
                     BackgroundImage = Properties.Resources.sidewalk;
                     Refresh();
                     WritePage("You continue out of the building through the nearest exit. Outside the school is normal, with no signs of any nightmarish creatures.");
                     option1Button.Text = "Next";
-                    option1Button.Enabled = true;
+                    option1Button.Visible = true;
                     break;
                 case 57:
                     WritePage("Suddenly, you hear something approaching from the hallway you came from.");
                     option1Button.Text = "Continue running past the student";
                     option2Button.Text = "Tell the student to run with you";
-                    option1Button.Enabled = true;
-                    option2Button.Enabled = true;
+                    option1Button.Visible = true;
+                    option2Button.Visible = true;
                     break;
                 case 58:
                     WritePage("You are about to apologize when you start to hear something approaching from the hallway you came from.");
                     option1Button.Text = "Continue running past the student";
                     option2Button.Text = "Tell the student to run with you";
-                    option1Button.Enabled = true;
-                    option2Button.Enabled = true;
+                    option1Button.Visible = true;
+                    option2Button.Visible = true;
                     break;
                 case 59:
                     WritePage("You start to hear a different pair of footsteps coming from the hall. Several pairs, in fact.");
                     option1Button.Text = "Go out into the hallway";
                     option2Button.Text = "Go out the window";
-                    option1Button.Enabled = true;
-                    option2Button.Enabled = true;
+                    option1Button.Visible = true;
+                    option2Button.Visible = true;
                     break;
                 case 60:
                     BackgroundImage = Properties.Resources.outside_house;
                     Refresh();
                     WritePage("You walk home, and once you are inside you check your phone. You find that there have been reports of these creatures in schools from your city since 9am that morning, but at first people assumed it was just some random teenagers lying.");
                     option1Button.Text = "Next";
-                    option1Button.Enabled = true;
+                    option1Button.Visible = true;
                     break;
                 case 61:
                     WritePage("You get up and try to run but immediately fall back down and hit your head off the doorframe.");
                     option1Button.Text = "Next";
-                    option1Button.Enabled = true;
+                    option1Button.Visible = true;
                     break;
                 case 62:
                     WritePage("You stay still, your ears ringing. You feel something grab your arms, too tightly to be human. You're too weak from the noise to stop them.");
                     option1Button.Text = "Next";
-                    option1Button.Enabled = true;
+                    option1Button.Visible = true;
                     break;
                 case 63:
                     BackgroundImage = null;
                     Refresh();
                     WritePage("...Needless to say, you don't survive.");
                     option1Button.Text = "Next";
-                    option1Button.Enabled = true;
+                    option1Button.Visible = true;
                     break;
                 case 65:
                     BackgroundImage = null;
                     Refresh();
                     WritePage("You find out that the situation is predicted to be under control by the following morning, as firefighters are using hoses to defeat the beings.");
                     option1Button.Text = "Next";
-                    option1Button.Enabled = true;
+                    option1Button.Visible = true;
                     break;
                 case 66:
                     BackgroundImage = Properties.Resources.school_hallway;
                     Refresh();
                     WritePage("You go out the hallway and are immediately confronted by a group of what at first seems to be students, but you soon discover that they are very much not students.");
                     option1Button.Text = "Next";
-                    option1Button.Enabled = true;
+                    option1Button.Visible = true;
                     break;
                 case 67:
                     BackgroundImage = null;
                     Refresh();
                     WritePage("You open the window and hop out. You feel grateful that your class is on the ground floor of the building.");
                     option1Button.Text = "Next";
-                    option1Button.Enabled = true;
+                    option1Button.Visible = true;
                     break;
                 case 68:
                     WritePage("There are many unknowns surrounding these creatures, but you're too tired to think about it much. You go to your bed and take a well-deserved nap. (Good Loner Ending)");
                     option1Button.Text = "Next";
-                    option1Button.Enabled = true;
+                    option1Button.Visible = true;
                     break;
                 case 69:
                     BackgroundImage = null;
                     Refresh();
                     WritePage("You run past the student toward the exit. Just as you exit the building, you hear a scream.");
                     option1Button.Text = "Next";
-                    option1Button.Enabled = true;
+                    option1Button.Visible = true;
                     break;
                 case 70:
                     BackgroundImage = Properties.Resources.entering_sidewalk;
                     Refresh();
                     WritePage("You grab the student's arm and tell them to run with you. You both make it out of the building.");
                     option1Button.Text = "Next";
-                    option1Button.Enabled = true;
+                    option1Button.Visible = true;
                     break;
                 case 71:
                     BackgroundImage = null;
                     Refresh();
                     WritePage("...Needless to say, you don't survive.");
                     option1Button.Text = "Next";
-                    option1Button.Enabled = true;
+                    option1Button.Visible = true;
                     break;
                 case 72:
                     BackgroundImage = Properties.Resources.sidewalk;
                     Refresh();
                     WritePage("Outside the school is normal, with no signs of any nightmarish creatures.");
                     option1Button.Text = "Next";
-                    option1Button.Enabled = true;
+                    option1Button.Visible = true;
                     break;
                 case 73:
                     BackgroundImage = Properties.Resources.sidewalk;
                     Refresh();
                     WritePage("Outside the school is normal, with no signs of any nightmarish creatures.");
                     option1Button.Text = "Next";
-                    option1Button.Enabled = true;
+                    option1Button.Visible = true;
                     break;
                 case 74:
                     BackgroundImage = Properties.Resources.sidewalk;
                     Refresh();
                     WritePage("Outside the school is normal, with no signs of any nightmarish creatures.");
                     option1Button.Text = "Next";
-                    option1Button.Enabled = true;
+                    option1Button.Visible = true;
                     break;
                 case 75:
                     BackgroundImage = Properties.Resources.outside_house;
                     Refresh();
                     WritePage("You decide to walk home, and once you are inside you check your phone. You find that there have been reports of these creatures in schools from your city since 9am that morning, but at first people assumed it was just some random teenagers lying.");
                     option1Button.Text = "Next";
-                    option1Button.Enabled = true;
+                    option1Button.Visible = true;
                     break;
                 case 76:
                     BackgroundImage = Properties.Resources.outside_house;
                     Refresh();
                     WritePage("You walk home, and once you are inside you check your phone. You find that there have been reports of these creatures in schools from your city since 9am that morning, but at first people assumed it was just some random teenagers lying.");
                     option1Button.Text = "Next";
-                    option1Button.Enabled = true;
+                    option1Button.Visible = true;
                     break;
                 case 77:
                      WritePage("You begin to explain what happened in your classroom, and then you see something move past the school windows. You point it out to the student, and as you both look closer you can roughly see the creatures.");
                     option1Button.Text = "Next";
-                    option1Button.Enabled = true;
+                    option1Button.Visible = true;
                     break;
                 case 78:
                     WritePage("You find out that the situation is predicted to be under control by the following morning, as firefighters are using hoses to defeat the beings.");
                     option1Button.Text = "Next";
-                    option1Button.Enabled = true;
+                    option1Button.Visible = true;
                     break;
                 case 79:
                     BackgroundImage = null;
                     Refresh();
                     WritePage("You find out that the situation is predicted to be under control by the following morning, as firefighters are using hoses to defeat the beings.");
                     option1Button.Text = "Next";
-                    option1Button.Enabled = true;
+                    option1Button.Visible = true;
                     break;
                 case 80:
                     WritePage("The student is understandably still skeptical, because the idea of weird creatures being in the school is very odd, and you couldn't see the creatures that well from the window. You go on your phone to try to see if there are any similar instances happening elsewhere, and it turns out there are.");
                     option1Button.Text = "Next";
-                    option1Button.Enabled = true;
+                    option1Button.Visible = true;
                     break;
                 case 81:
                     WritePage("There are many unknowns surrounding these creatures, but you're too tired to think about it much. You go to your bed and take a well-deserved nap. (Injured Loner Ending)");
                     option1Button.Text = "Next";
-                    option1Button.Enabled = true;
+                    option1Button.Visible = true;
                     break;
                 case 82:
                     WritePage("There are many unknowns surrounding these creatures, but you're too tired to think about it much. You call your parents to let them know you're safe, and then go to your bed and take a nap. (Bad Loner Ending)");
                     option1Button.Text = "Next";
-                    option1Button.Enabled = true;
+                    option1Button.Visible = true;
                     break;
                 case 83:
                     WritePage("You find that there have been reports of these creatures in schools from your city since 9am that morning, but at first people assumed it was just some random teenagers lying.");
                     option1Button.Text = "Next";
-                    option1Button.Enabled = true;
+                    option1Button.Visible = true;
                     break;
                 case 84:
                     WritePage("You find out that the situation is predicted to be under control by the following morning, as firefighters are using hoses to defeat the beings.");
                     option1Button.Text = "Next";
-                    option1Button.Enabled = true;
+                    option1Button.Visible = true;
                     break;
                 case 85:
                     WritePage("The student finds similar articles posted while searching on their own phone, so they believe you, but are still shocked. They thank you for getting them to leave the school. You both decide to walk home.");
                     option1Button.Text = "Next";
-                    option1Button.Enabled = true;
+                    option1Button.Visible = true;
                     break;
                 case 86:
                     BackgroundImage = null;
                     Refresh();
                     WritePage("There are many unknowns surrounding these creatures, but you're too tired to think about it much. You call your parents to let them know you're safe. Once you're home, you go directly to bed and take a well-deserved nap. (Duo Ending)");
                     option1Button.Text = "Next";
-                    option1Button.Enabled = true;
+                    option1Button.Visible = true;
                     break;
                 case 199:
                     BackgroundImage = null;
@@ -1075,8 +1085,8 @@ namespace AdventureGame
                     WritePage("Play again?");
                     option1Button.Text = "Yes";
                     option2Button.Text = "No";
-                    option1Button.Enabled = true;
-                    option2Button.Enabled = true;
+                    option1Button.Visible = true;
+                    option2Button.Visible = true;
                     break;
                 case 200:
                     WritePage("Thank you for playing!");
@@ -1094,8 +1104,8 @@ namespace AdventureGame
             outputLabel.Text = "";
             option1Button.Text = "";
             option2Button.Text = "";
-            option1Button.Enabled = false;
-            option2Button.Enabled = false;
+            option1Button.Visible = false;
+            option2Button.Visible = false;
             outputLabel.Refresh();
             option1Button.Refresh();
             option2Button.Refresh();
